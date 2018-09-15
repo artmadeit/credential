@@ -31,9 +31,6 @@ const small = { fontSize: 12 };
 const row = { display: 'flex', flexDirection: 'row' };
 
 const styles = StyleSheet.create({
-  content: {
-    paddingVertical: 36,
-  },
   credential: {
     width: '49%',
     height: '25%',
@@ -41,6 +38,15 @@ const styles = StyleSheet.create({
   },
   container: {
     padding: 14,
+    display: 'flex',
+    justifyContent: 'space-between',
+    flexDirection: 'column',
+    height: '100%',
+  },
+  content: {},
+  logo: {
+    display: 'flex',
+    flexDirection: 'row',
   },
   footer: {
     position: 'absolute',
@@ -48,10 +54,6 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     alignContent: 'center',
-  },
-  logo: {
-    display: 'flex',
-    flexDirection: 'row',
   },
   eventName: {
     fontSize: 8,
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const image = { width: 75, marginTop: -10 };
+const image = { width: 100, marginTop: -8, marginLeft: 10 };
 
 const Output = () => (
   <Document
@@ -92,11 +94,7 @@ const Assistant = ({ id, name, relation, organization }) => {
         <View style={{ ...row }}>
           <Text style={{ fontSize: 6 }}>Organized by:</Text>
           <Image
-            src="http://res.cloudinary.com/sopios/image/upload/v1513311519/sopios.png"
-            style={image}
-          />
-          <Image
-            src="http://res.cloudinary.com/sopios/image/upload/v1516986637/alio_q5xzlx.png"
+            src="http://res.cloudinary.com/sopios/image/upload/v1536815807/claio_top_vsfax6.png"
             style={image}
           />
         </View>
